@@ -1,0 +1,50 @@
+<div th:fragment="navigation" class="sidebar" id="side_nav">
+	<!-- <div>
+		<nav class="navbar">
+			<div class="container">
+				<span class="navbar-brand mb-0 h1">CRM</span>
+			</div>
+		</nav>
+	</div>
+	<ul class="list-unstyled">
+		<li class="nav_item"><a th:href="@{/dashboard}" class="text-decoration-none d-block">Dashboard</a></li>
+		<li class="nav_item"><a th:href="@{/user}" class="text-decoration-none d-block">User</a></li>
+		<li class="nav_item"><a th:href="@{/task}" class="text-decoration-none d-block">Task</a></li>
+		<li class="nav_item"><a th:href="@{/project}" class="text-decoration-none d-block">Project</a></li>
+		<li class="nav_item"><a th:href="@{/index}" class="text-decoration-none d-block">My Profile</a></li>
+	</ul> -->
+	<div class="logo">
+		<img th:src="@{/image/logo.png}" alt="Logo" width="50" height="50">
+		<div class="logo_name">CRM</div>
+	</div>
+	<ul class="nav_list">
+		<li>
+			<a th:href="@{/dashboard}">
+				<i class='bx bxs-dashboard'></i>
+				<span class="links_name">Dashboard</span>
+			</a>
+			<!-- <span class="toolstip">Dashboard</span> -->
+		</li>
+		<li>
+			<a th:href="@{/user}">
+				<i class='bx bxs-user-detail'></i>
+				<span class="links_name">User</span>
+			</a>
+			<!-- <span class="toolstip">User</span> -->
+		</li>
+		<li>
+			<a th:href="@{/task}">
+				<i class='bx bx-task'></i>
+				<span class="links_name">Task</span>
+			</a>
+			<!-- <span class="toolstip">Task</span> -->
+		</li>
+		<li>
+			<a th:href="@{/project}">
+				<i class='bx bxs-component'></i>
+				<span class="links_name">Project</span>
+			</a>
+			<!-- <span class="toolstip">Project</span> -->
+		</li>
+	</ul>
+</div>
